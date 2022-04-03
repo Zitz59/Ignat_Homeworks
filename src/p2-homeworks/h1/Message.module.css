@@ -1,3 +1,71 @@
-.message {
+body {
+    background: url("https://wallpapercave.com/wp/wp6570018.jpg");
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.messageWrapper {
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Roboto', normal, serif;
+
+}
+
+.messageBlock {
+
+    padding: 5px 10px 10px 5px;
+    width: 450px;
+    background-color: #43e43d;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    grid-template-columns: 100px 200px;
+}
+
+.message {
+    position: relative;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px 10px 10px 0;
+    background: #242729;
+    color: #bbfbbc;
+}
+
+.message::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(60px at top left, transparent 49%, #242729 51%) no-repeat right bottom;
+}
+.avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.messageName  {
+    margin: 0;
+    color: #aaaaae;
+}
+
+.messageText{
+    margin-top: 15px;
+}
+
+.messageTime {
+    margin-top: 5px;
+    text-align: right;
+    color: #636368;
 }
