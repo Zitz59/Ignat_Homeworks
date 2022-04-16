@@ -1,3 +1,73 @@
 .someClass {
 
 }
+
+.all {
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid #2fffe0;
+    color: #2fffe0;
+    background-color: #0c327e;
+
+}
+
+.high {
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid #3dff2f;
+    color: #3dff2f;
+    background-color: #0c327e;
+
+}
+
+.middle {
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid #ffdc2f;
+    color: #ffdc2f;
+    background-color: #0c327e;
+}
+
+.low {
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid #ff2f2f;
+    color: #ff2f2f;
+    background-color: #0c327e;
+}
+
+.deleteButton {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    margin-left: 210px;
+    margin-top: -20px;
+    color: white;
+    background-color: #0c327e;
+    border-radius: 10px;
+}
+
+.id {
+
+}
+
+.name {
+    margin: 10px;
+    width: 120px;
+}
+
+.priority {
+
+}
+
+.affair {
+
+}
