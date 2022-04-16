@@ -1,7 +1,22 @@
-.someClass {
-
+.inputForever {
+    border: 2px solid rgba(3, 111, 250, 0.62);
 }
 
 .error {
     border: 1px solid red;
+}
+
+.greetingsButton {
+    padding: 3px;
+    margin: 0 0 0 5px;
+    border-radius: 7px;
+    background-color: rgba(37, 164, 255, 0.62);
+    color: aliceblue;
+    width: 70px;
+
+}
+
+.totalUsersCounter{
+    margin: 0 0 0 5px;
+    color: #2fffe0;
 }
