@@ -1,12 +1,36 @@
 .superInput {
+    display: block;
+    width: 100%;
+    padding: 12px 18px;
 
+    font-family: inherit;
+    font-size: 1rem;
+    color: #fff;
+
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    margin-bottom: 10px;
+    display: block;
+    width: 15%;
+    padding: 12px 18px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    color: #fff;
+
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+
+    border: 3px #FFFFFF19;
+
 }
 
 .error {
-    color: red;
+    color: #000000;
 }
+
