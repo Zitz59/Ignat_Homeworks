@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
-import {constants} from 'os';
-import affair from './Affair';
+
 
 // types
 export type AffairPriorityType = 'high' | 'middle' | 'low'
