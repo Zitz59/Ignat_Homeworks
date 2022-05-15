@@ -1,6 +1,7 @@
 .default {
     display: inline-block;
     padding: 12px 35px;
+    margin-bottom: 10px;
 
     font-family: inherit;
     font-size: 1rem;
@@ -25,6 +26,7 @@
 .red {
     display: inline-block;
     padding: 12px 35px;
+    margin-bottom: 10px;
 
     font-family: inherit;
     font-size: 1rem;
@@ -43,19 +45,21 @@
     background-color: #d95ebd;
 }
 
-.disabled{
+.disabled:disabled{
     display: inline-block;
     padding: 12px 35px;
 
     font-family: inherit;
     font-size: 1rem;
     line-height: 1.1;
-    color: #b62626;
-    background-color: #c43fa9;
+    color: #a9a9a9;
+    background-color: #fca5e4;
 
     border-radius: 5px;
     border: 0;
-    cursor: pointer;
+    cursor: not-allowed;
+    z-index: 5;
+
 
     transition: background 0.3s linear;
 }
