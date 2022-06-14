@@ -28,7 +28,6 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
     }
 
     const finalInputClassName = `${s.checkbox} ${className ? className : ''}`
-    debugger
     return (
 
         <label className={s.label}>
