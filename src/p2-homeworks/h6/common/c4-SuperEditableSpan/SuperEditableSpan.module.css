@@ -1,0 +1,12 @@
+.spanIcon {
+    width: 20px;
+}
+
+.spanStyle {
+    display: inline-block;
+    color: #385CD8;
+    height:33px;
+    font-size: large;
+    padding-top: 20px;
+    padding-left: 15px;
+}
