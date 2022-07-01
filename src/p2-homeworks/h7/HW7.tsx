@@ -4,6 +4,8 @@ import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 
 const arr = ['x', 'y', 'z']
 
+// mappedArr= arr.map(el=>el ? el)
+
 function HW7() {
     const [value, onChangeOption] = useState(arr[1])
 
