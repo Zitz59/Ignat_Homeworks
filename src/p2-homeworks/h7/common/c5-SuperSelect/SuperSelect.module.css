@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --select-border: #777;
+    --select-focus: #d683f1;
+    --select-arrow: var(--select-border);
+}
+
+.select {
+    width: 100%;
+    min-width: 100px;
+    max-width: 150px;
+    border: 2px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #ffffff, #d683f1 63%);
+}
+
+.select::-ms-expand {
+    display: none;
+}
