@@ -1,0 +1,24 @@
+.hwBlock{
+    padding: 10px 0 0 0;
+}
+.peopleContainer{
+    display: flex;
+    justify-content: center;
+    background: #3d91e4;
+    opacity:.5;
+    width: 420px;
+    height: 120px;
+    border-radius: 25px;
+}
+
+.peopleBlock{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonBlock{
+    display: flex;
+
+}
