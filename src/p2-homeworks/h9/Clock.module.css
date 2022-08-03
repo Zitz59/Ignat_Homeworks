@@ -1,0 +1,26 @@
+.timerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #2b3f77;
+    max-width: 120px;
+    height: 170px;
+    color: #d683f1;
+    border-radius: 10px;
+}
+.timerBlock{
+    padding-top: 10px;
+}
+
+.dateBlock {
+    height: 10px;
+    padding-bottom: 20px;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+}
