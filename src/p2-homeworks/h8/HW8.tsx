@@ -22,10 +22,9 @@ function HW8() {
     const [people, setPeople] = useState<Array<UserType>>(initialPeople) // need to fix any
     // need to fix any
     const finalPeople = people.map((p: UserType) => (
-        <div key={p._id}>
+        <div key={p._id} className={s.resultBlock}>
             <span> {p.name} </span>
             <span> {p.age} </span>
-    
         </div>
     ))
 
