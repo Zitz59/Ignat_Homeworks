@@ -43,9 +43,7 @@ function Clock() {
     // fix with date
     const stringDate = (
         <div>
-            <span>{getTwoDigitsString(date.getDay())}</span>.
-            <span>{getTwoDigitsString(date.getMonth())}</span>.
-            <span>{date.getFullYear()}</span>
+            <span>{(date.toDateString())}</span>.
         </div>)
 
 
