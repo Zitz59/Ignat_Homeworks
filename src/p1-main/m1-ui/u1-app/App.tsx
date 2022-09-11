@@ -7,10 +7,7 @@ function App() {
     return (
         <div className={styles.App}>
             <div>react homeworks:</div>
-
             <HW5/>
-
-
         </div>
     )
 }
