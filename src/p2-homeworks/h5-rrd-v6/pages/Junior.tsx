@@ -1,12 +1,11 @@
 import React from 'react'
+import HW11 from '../../h11/HW11';
 
 
 function Junior() {
     return (
         <div>
-
-            <h6>it's nothing here ... for the time being</h6>
-
+            <HW11/>
         </div>
     )
 }
