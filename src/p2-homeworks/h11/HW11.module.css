@@ -1,0 +1,23 @@
+
+.superRangeBlock{
+    display: flex;
+}
+
+.superDoubleSpanBlock{
+    margin-top: 20px;
+    display: flex;
+}
+
+.spanStyle{
+    display: inline-block;
+    width: 25px;
+    textAlign: center;
+    margin:5px;
+}
+
+.spanStyle2{
+    display: inline-block;
+    width: 25px;
+    textAlign: center;
+    margin:5px 15px;
+}
