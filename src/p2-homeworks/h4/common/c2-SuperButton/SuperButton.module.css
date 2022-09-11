@@ -1,7 +1,10 @@
 .default {
-    display: inline-block;
+    display:  inline-block;
+    box-sizing: border-box;
     padding: 12px 35px;
     margin: 7px;
+    max-width: 150px;
+    overflow: visible;
 
     font-family: inherit;
     font-size: 1rem;
@@ -17,6 +20,7 @@
     cursor: pointer;
 
     transition: background 0.3s linear;
+
 }
 
 .default:hover{
