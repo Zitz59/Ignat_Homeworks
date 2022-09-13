@@ -1,9 +1,11 @@
 import {loadingReducer} from './loadingReducer'
 import {combineReducers, createStore} from 'redux'
+import {backgroundReducer} from './backgroundColorReducer';
 
 
 const reducers = combineReducers({
     loading: loadingReducer,
+    backgroundColor:backgroundReducer
 })
 
 const store = createStore(reducers)
