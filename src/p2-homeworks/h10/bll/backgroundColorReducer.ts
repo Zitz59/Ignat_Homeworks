@@ -1,18 +1,18 @@
 const initialState = {
-    color: 'dark'
+    theme: 'dark'
 }
 
 export const backgroundReducer = (state: initialStateType = initialState, action: ChangeBackgroundActionType) => { // fix any
     switch (action.type) {
         case 'CHANGE-BACKGROUND':
-            return {...state,color: action.color}
+            return {...state,theme: action.theme}
         default:
             return state
     }
 }
 
 //actions
-export const changeBackgroundAC = ( color:string) => ({type: 'CHANGE-BACKGROUND',color} as const) // fix any
+export const changeBackgroundAC = ( theme:string) => ({type: 'CHANGE-BACKGROUND',theme} as const) // fix any
 //types
 
 type ChangeBackgroundActionType = ReturnType<typeof changeBackgroundAC>
