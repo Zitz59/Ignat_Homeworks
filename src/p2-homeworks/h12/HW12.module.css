@@ -7,11 +7,11 @@
 }
 
 .red {
-    background: lightcoral;
+    background: orangered;
 }
 
 .red-text {
-    color: aqua;
+    color: yellow;
 }
 
 .some {
@@ -20,4 +20,20 @@
 
 .some-text {
     color: darkslateblue;
+}
+
+.magenta {
+    background: darkmagenta;
+}
+
+.magenta-text {
+    color: lightskyblue;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.yellow-text {
+    color: darkblue;
 }
