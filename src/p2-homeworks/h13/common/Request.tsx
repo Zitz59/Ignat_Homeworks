@@ -29,7 +29,7 @@ export const Request: React.FC<RequestPropsType> = () => {
         <div className={s.requestBlock}>
             <SuperButton onClick={onButtonClick}>Send</SuperButton>
             <SuperCheckbox checked={checked} onChange={onChecked}/>
-            <div>Server says:''{value}''</div>
+            <div>Server says: " {value} "</div>
         </div>
     )
 }
