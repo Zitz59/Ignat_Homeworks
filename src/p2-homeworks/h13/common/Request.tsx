@@ -1,14 +1,35 @@
 import SuperButton from '../../h4/common/c2-SuperButton/SuperButton';
 import SuperCheckbox from '../../h4/common/c3-SuperCheckbox/SuperCheckbox';
-import React from 'react';
+import React, {ChangeEvent, useState} from 'react';
 import s from './Request.module.css'
+import {requestsAPI} from '../api/api';
 
+export type RequestPropsType = {}
 
-export const Request = () => {
-  return(
-      <div className={s.requestBlock}>
-          <SuperButton>Send</SuperButton>
-          <SuperCheckbox/>
-      </div>
-  )
+export const Request: React.FC<RequestPropsType> = () => {
+    const [value, setValue] = useState<string>('Send a request')
+    const [checked, setChecked] = useState<boolean>(false)
+
+    const onChecked = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
+    const onButtonClick = () => {
+        requestsAPI.sendRequest(checked)
+            .then(response => {
+                console.log({...response})
+                console.log(response.data.info)
+                setValue(response.data.errorText)
+
+            }).catch(Error => {
+            console.log({...Error})
+            console.log(Error.response.data.info)
+            setValue(Error.response.data.errorText)
+        })
+    }
+
+    return (
+
+        <div className={s.requestBlock}>
+            <SuperButton onClick={onButtonClick}>Send</SuperButton>
+            <SuperCheckbox checked={checked} onChange={onChecked}/>
+        </div>
+    )
 }
