@@ -7,7 +7,7 @@ import {requestsAPI} from '../api/api';
 export type RequestPropsType = {}
 
 export const Request: React.FC<RequestPropsType> = () => {
-    const [value, setValue] = useState<string>('Send a request')
+    const [value, setValue] = useState<string>('no response, click please!')
     const [checked, setChecked] = useState<boolean>(false)
 
     const onChecked = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
@@ -26,10 +26,10 @@ export const Request: React.FC<RequestPropsType> = () => {
     }
 
     return (
-
         <div className={s.requestBlock}>
             <SuperButton onClick={onButtonClick}>Send</SuperButton>
             <SuperCheckbox checked={checked} onChange={onChecked}/>
+            <div>Server says:''{value}''</div>
         </div>
     )
 }
